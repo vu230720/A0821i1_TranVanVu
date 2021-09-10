@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+    </tr>
+    <tr>
+        <td>
+            <input type="number" id="nhapsotien">
+        </td>
+        <td>
+            <select id="from">
+                <option value="VND">Viet Nam dong</option>
+                <option value="USD">USD</option>
+            </select>
+        </td>
+        <td>
+            <select id="to">
+                <option value="USD">USD</option>
+                <option value="VND">Viet Nam dong</option>
+            </select>
+        </td>
+        <td>
+            <input type="button" id="convert" value="convert" onclick="chuyendoi()">
+        </td>
+    </tr>
+</table>
+    <div id="Result">Result:</div>
+</form>
+<script>
+    function chuyendoi() {
+    let a = document.getElementById("nhapsotien").value;
+    let From = document.getElementById("from").value;
+    let To = document.getElementById("to").value;
+    let convert;
+        if (From === "VND" && To === "USD") {
+            convert = a/23000;
+            document.getElementById("Result").innerHTML= "Result: " + convert + "VND";
+        } else if (From === "USD" && To === "VND") {
+            convert = a*23000;
+            document.getElementById("Result").innerHTML= "Result: " + convert + "USD";
+        } else {
+            alert("Bạn đã chọn trùng phương thức");
+        }
+    }
+</script>
+</body>
+</html>
