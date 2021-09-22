@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        button {
+            height: 50px;
+            width: 50px;
+        }
+        input {
+            height: 40px;
+            width: 204px;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <input type="text" id="nhapso">
+    <br>
+    <br>
+    <button type="button" onclick="so1()">1</button>
+    <button type="button" onclick="so2()">2</button>
+    <button type="button" onclick="so3()">3</button>
+    <button type="button" onclick="add()">+</button>
+    <br>
+    <br>
+    <button type="button" onclick="so4()">4</button>
+    <button type="button" onclick="so5()">5</button>
+    <button type="button" onclick="so6()">6</button>
+    <button type="button" onclick="sub()">-</button>
+    <br>
+    <br>
+    <button type="button" onclick="so7()">7</button>
+    <button type="button" onclick="so8()">8</button>
+    <button type="button" onclick="so9()">9</button>
+    <button type="button" onclick="mul()">x</button>
+    <br>
+    <br>
+    <button type="button" onclick="reset()">C</button>
+    <button type="button" onclick="so0()">0</button>
+    <button type="button" onclick="equal()">=</button>
+    <button type="button" onclick="divi()">/</button>
+</form>
+<script>
+    function so1() {
+        nhapso.value +=1;
+    }
+    function so2() {
+        nhapso.value +=2;
+    }
+    function so3() {
+        nhapso.value +=3;
+    }
+    function so4() {
+        nhapso.value +=4;
+    }
+    function so5() {
+        nhapso.value +=5;
+    }
+    function so6() {
+        nhapso.value +=6;
+    }
+    function so7() {
+        nhapso.value +=7;
+    }
+    function so8() {
+        nhapso.value +=8;
+    }
+    function so9() {
+        nhapso.value +=9;
+    }
+    function so0() {
+        nhapso.value +=0;
+    }
+    function add() {
+        nhapso.value += "+";
+    }
+    function sub() {
+        nhapso.value += "-";
+    }
+    function mul() {
+        nhapso.value += "*";
+    }
+    function divi() {
+        nhapso.value += "/";
+    }
+    function equal() {
+        alert(eval(document.getElementById("nhapso").value));
+    }
+    function reset() {
+        document.getElementById("nhapso").value=null;
+    }
+</script>
+</body>
+</html>
