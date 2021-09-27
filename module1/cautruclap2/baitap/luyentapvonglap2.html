@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>-->
+<!--    let number = parseInt(prompt("Nhập số các số fibonacci cần in: "));-->
+<!--    let a1 = 0;-->
+<!--    let a2 = 1;-->
+<!--    let a = 1;-->
+<!--    for (let i=0;i<number;i++) {-->
+<!--        document.write(a);-->
+<!--        document.write("<br>");-->
+<!--        a = a1+a2;-->
+<!--        a1 = a2;-->
+<!--        a2 =a;-->
+<!--    }-->
+<!--</script>-->
+<!--<script>-->
+<!--    let a = parseFloat(prompt("Nhập số cần tính giai thừa"));-->
+<!--    let giaithua = 1;-->
+<!--    for (let i = 1; i < a; i++) {-->
+<!--        giaithua *= i;-->
+<!--    }-->
+<!--    document.write("kết quả là : " + giaithua);-->
+<!--</script>-->
+<!--<script>-->
+<!--    for (let i = 1; i <= 5; i++) {-->
+<!--        for (let j = 1; j <= i; j++) {-->
+<!--            document.write("*");-->
+<!--        }-->
+<!--        document.write("<br>");-->
+<!--    }-->
+<!--    for (let a =1 ; a <=3 ; a++){-->
+<!--        document.write("<br>");-->
+<!--    }-->
+<!--</script>-->
+<!--<script>-->
+<!--    for (let i = 1; i <= 20; i++) {-->
+<!--        document.write("* ");-->
+<!--    }-->
+<!--    document.write("<br>");-->
+<!--    for (let j = 1; j <= 5; j++) {-->
+<!--        document.write(" *");-->
+<!--        for (i = 1; i <= 27; i++) {-->
+<!--            document.write("&ensp;");-->
+<!--        }-->
+<!--        document.write("*");-->
+<!--        document.write("<br>");-->
+<!--    }-->
+<!--    for (let i = 1; i <= 20; i++) {-->
+<!--        document.write("* ");-->
+<!--    }-->
+<!--</script>-->
+<script>
+    let tienBanDau = parseFloat(prompt("Nhập số tiền số tiền ban đầu: "));
+    let thang = parseFloat(prompt("Nhập số tháng cho vay: "));
+    let laiHangThang = parseFloat(prompt("Nhập lãi hàng tháng: "));
+    let tongSoTienLai=0;
+    for (let i=0; i<thang;i++) {
+        tongSoTienLai += (tienBanDau+tongSoTienLai) * laiHangThang;
+    }
+    alert(tongSoTienLai)
+</script>
+</body>
+</html>

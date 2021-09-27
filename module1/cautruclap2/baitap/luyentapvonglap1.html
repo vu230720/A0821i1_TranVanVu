@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>-->
+<!--    for (let i = 1; i < 100; i++) {-->
+<!--        if (i == 99) {-->
+<!--            document.write("Bạn đã hoàn thành");-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+<!--<script>-->
+<!--    let a = parseFloat(prompt("mời bạn nhập nhiệt độ của bạn: "));-->
+<!--    let count = 0;-->
+<!--    while (count < 100) {-->
+<!--        if (a > 20 && a < 100) {-->
+<!--            alert("Nhiệt độ của bạn là: " + a);-->
+<!--            break;-->
+<!--        } else if (a <= 20){-->
+<!--            alert("Nhiệt độ của bạn quá thấp xin mời tăng nhiệt độ");-->
+<!--            a = parseFloat(prompt("xin mời bạn tăng nhiệt độ"));-->
+<!--            count++;-->
+<!--        } else {-->
+<!--            alert("Nhiệt độ của bạn quá cao, mời bạn giảm nhiệt độ");-->
+<!--            a = parseFloat(prompt("mời bạn giảm nhiệt độ"));-->
+<!--            count++;-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+<!--<script>-->
+<!--    let a1 = 0;-->
+<!--    let a2 = 1;-->
+<!--    let a = 1;-->
+<!--    for (let i = 1; i <= 20; i++) {-->
+<!--        document.write(a + "<br>");-->
+<!--        a = a1 + a2;-->
+<!--        a1 = a2;-->
+<!--        a2 = a;-->
+<!--    }-->
+<!--</script>-->
+<!--<script>-->
+<!--    let a1 = 0;-->
+<!--    let a2 = 1;-->
+<!--    let a = 1;-->
+<!--    for (let i = 1; i <= 20; i++) {-->
+<!--        a = a1 + a2;-->
+<!--        a1 = a2;-->
+<!--        a2 = a;-->
+<!--        if (a % 5 == 0) {-->
+<!--            document.write("số đầu tiên chia hết cho 5 là " +a);-->
+<!--            break;-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+<!--<script>-->
+<!--    let a1 = 0;-->
+<!--    let a2 = 1;-->
+<!--    let a = 1;-->
+<!--    let tong = 0;-->
+<!--    for (let i = 1; i <= 20; i++){-->
+<!--        a = a1 + a2;-->
+<!--        a1 = a2;-->
+<!--        a2 = a;-->
+<!--        tong += a;-->
+<!--    }-->
+<!--    console.log(tong);-->
+<!--</script>-->
+<!--<script>-->
+<!--    let a = 0;-->
+<!--    let sum = 0;-->
+<!--    for (let i = 1; i <= 30; a++){-->
+<!--        if (a % 7 == 0) {-->
+<!--            sum += a;-->
+<!--            i++;-->
+<!--        }-->
+<!--    }-->
+<!--    document.write(sum);-->
+<!--</script>-->
+<!--<script>-->
+<!--    for (let i =1; i < 100; i++) {-->
+<!--        if (i % 3 == 0 && i % 5 == 0) {-->
+<!--            document.write("FizzBuzz" + "<br>");-->
+<!--        }else if (i % 3 == 0) {-->
+<!--            document.write("Fizz" + "<br>");-->
+<!--        } else if (i % 5 == 0) {-->
+<!--            document.write("Buzz" + "<br>");-->
+<!--        } else {-->
+<!--            document.write(i + "<br>");-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+<script>
+    let start = parseInt(prompt("Bạn muốn đoán số từ khoảng : "));
+    let end = parseInt(prompt("tới khoảng : "));
+
+    let random = Math.round(Math.random() * (end - start) + start);
+    let count = 0;
+    let choose = parseInt(prompt("Mời nhập số : "));
+
+    while (count < 3){
+        if (random === choose){
+            alert("Victory!!");
+            break;
+        } else if (choose < random){
+            choose = parseInt(prompt("Bạn nhập số bị nhỏ rồi : "));
+            count++;
+        } else {
+            choose = parseInt(prompt("Bạn nhập số bị lớn rồi : "));
+            count++;
+        }
+    }
+
+</script>
+</body>
+</html>
