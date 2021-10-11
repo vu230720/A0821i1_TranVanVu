@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>-->
+<!--    let a = [-->
+<!--        [1, 2, 1, 24],-->
+<!--        [8, 11, 9, 4],-->
+<!--        [7, 0, 7, 27],-->
+<!--        [7, 4, 28, 14],-->
+<!--        [3, 10, 26, 7]-->
+<!--    ];-->
+<!--    for (let i in a) {-->
+<!--        document.write("row " + i + "<br>");-->
+<!--        for (let j in a[i]) {-->
+<!--            document.write(a[i][j] + "<br>");-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+<!--<script>-->
+<!--    let array =  Array();-->
+<!--    array.length = parseInt(prompt("nhập vào số phần tử: "));-->
+<!--    for (i=0; i < array.length; i++) {-->
+<!--        array[i] = prompt("array[" + i + "]=");-->
+<!--    }-->
+<!--document.write(array.reverse().join(""))-->
+<!--</script>-->
+<!--<script>-->
+<!--    let array = [1, 2, 3, 4, 5];-->
+<!--    let n = 0;-->
+<!--    for (var i in array) {-->
+<!--        if (!isNaN(array[i])) {-->
+<!--            n++;-->
+<!--        }-->
+<!--    }-->
+<!--    alert(n);-->
+<!--</script>-->
+<!--<script>-->
+<!--    let array = ["Tuyết Hân"];-->
+<!--    let n = 0;-->
+<!--    for (var i of array[0]) {-->
+<!--        n++;-->
+<!--    }-->
+<!--    alert(n)-->
+<!--</script>-->
+<!--<script>-->
+<!--    let array = [];-->
+<!--    array[0] = prompt("Nhập chuỗi thứ 1: ");-->
+<!--    array[1] = prompt("Nhập chuỗi thứ 2: ");-->
+<!--    if (array[0] === array[1]) {-->
+<!--        alert("2 chuỗi giống nhau");-->
+<!--    } else{-->
+<!--        alert("2 chuỗi khác nhau");-->
+<!--    }-->
+<!--</script>-->
+<script>
+    let char = prompt("Nhập vào mảng kí tự : ");
+    let array = [];
+    for (var i of char) {
+        array.push(i);
+    }
+    for (j=0; j<array.length; j++) {
+        if (array[j] === "-") {
+            array[j] = "_";
+        }
+    }
+    document.write(array.join(""));
+</script>
+</body>
+</html>

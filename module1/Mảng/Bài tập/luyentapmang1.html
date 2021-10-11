@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>-->
+<!--    let array = [1, 3, 14, 23];-->
+<!--    document.write(array + "<br>");-->
+<!--    for (let i = 0; i < array.length; i++) {-->
+<!--        if (array[i] > 10) {-->
+<!--            document.write(array[i] + " là các số lớn hơn 10" + "<br>");-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+<!--<script>-->
+<!--    let array = [14, 5, 95, 7, 23, 20];-->
+<!--    let max = 0;-->
+<!--    document.write(array + "<br>");-->
+<!--    for (let i = 0; i < array.length; i++) {-->
+<!--        if (array[i] > max) {-->
+<!--            max = array[i];-->
+<!--        }-->
+<!--    }-->
+<!--    document.write(max + " là giá trị lớn nhất mảng" + "<br>" + "array[" + array.indexOf(max) + "] là vị trí lớn nhất trong mảng");-->
+<!--</script>-->
+<!--<script>-->
+<!--    let array = [7, 23, 20, 14];-->
+<!--    let sum = 0;-->
+<!--    let max = 0;-->
+<!--    let average = 0;-->
+<!--    for (let i=0; i< array.length; i++) {-->
+<!--        sum += array[i];-->
+<!--        if (array[i] > max) {-->
+<!--            max = array[i];-->
+<!--        }-->
+<!--    }-->
+<!--    document.write(max + " là giá trị lớn nhất" + "<br>");-->
+<!--    average = sum / (array.length);-->
+<!--    document.write(average + " là trung bình cộng của mảng");-->
+<!--</script>-->
+<!--<script>-->
+<!--    let array = Array();-->
+<!--    array.length = parseInt(prompt("nhập vào số phần tử của mảng: "));-->
+<!--    for (let i=0; i<array.length; i++) {-->
+<!--        array[i] = parseInt(prompt("array[" + i + "]=" ));-->
+<!--    }-->
+<!--    document.write(array.reverse());-->
+<!--</script>-->
+<!--<script>-->
+<!--    let array = Array();-->
+<!--    let array1 = [];-->
+<!--    array.length = parseInt(prompt("nhập vào số phần tử các số nguyên trong mảng : "));-->
+<!--    for (i = 0; i < array.length; i++) {-->
+<!--        array[i] = parseInt(prompt("array[" + i + "]="));-->
+<!--        if (array[i] < 0) {-->
+<!--            array1.push(array[i])-->
+<!--        }-->
+<!--    }-->
+<!--    document.write("trong mảng vừa nhập có " + array1.length + " số nguyên âm")-->
+<!--</script>-->
+<!--<script>-->
+<!--    let array = [14, 5, 95, 23, 7, 20];-->
+<!--    let v = parseInt(prompt("nhập vào số V : "));-->
+<!--    for (let i = 0; i < array.length; i++) {-->
+<!--        if (array[i] === v) {-->
+<!--            alert("V is in the array");-->
+<!--            break;-->
+<!--        } else if (i === (array.length - 1)) {-->
+<!--            alert("V is not in the array")-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+<!--<script>-->
+<!--    let array = [14, 5, 95, 23, 7, 20];-->
+<!--    let v = parseInt(prompt("nhập vào số V : "));-->
+<!--    for (let i = 0; i < array.length; i++) {-->
+<!--        if (array[i] === v) {-->
+<!--            alert("V is in the array");-->
+<!--            array.splice(i, 1);-->
+<!--            break;-->
+<!--        } else if (i === (array.length - 1)) {-->
+<!--            alert("V is not in the array")-->
+<!--        }-->
+<!--    }-->
+<!--    document.write(array);-->
+<!--</script>-->
+<!--<script>-->
+<!--    let array =  Array();-->
+<!--    array.length = parseInt(prompt("nhập vào một mảng số nguyên gồm 10 phần tử : "));-->
+<!--    for (i=0; i < array.length; i++) {-->
+<!--        array[i] = parseInt(prompt("array[" + i + "]="));-->
+<!--    }-->
+<!--    array.sort(function (a, b) {-->
+<!--        return b-a-->
+<!--    });-->
+<!--    document.write(array)-->
+<!--</script>-->
+<script>
+    let arraya =[14, 5, 95];
+    let arrayb =[7, 23, 20];
+    let arrayc = arraya.concat(arrayb);
+    document.write(arrayc)
+</script>
+</body>
+</html>
