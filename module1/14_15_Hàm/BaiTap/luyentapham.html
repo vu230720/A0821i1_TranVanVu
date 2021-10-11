@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>-->
+<!--    function binhphuong(number) {-->
+<!--        return number * number;-->
+<!--    }-->
+<!--    let a = prompt("Nhập :");-->
+<!--    alert(binhphuong(a));-->
+<!--</script>-->
+<!--<script>-->
+<!--        let pi = 3.14;-->
+<!--        function dientich(r) {-->
+<!--                return Math.PI*r*r;-->
+<!--            }-->
+<!--        function  chuvi(r) {-->
+<!--                return Math.PI*r*2;-->
+<!--            }-->
+<!--        let r= parseFloat(prompt("Nhập bán kính : "));-->
+<!--        document.write("Diện tích hình tròn: "+dientich(r)+"<br>");-->
+<!--        document.write("Chu vi hình tròn: "+ chuvi(r));-->
+<!--</script>-->
+<!--<script>-->
+<!--    function kiemtrakituso(kiemtra) {-->
+<!--        return !isNaN(kiemtra);-->
+<!--    }-->
+<!--    let kiemtra = prompt("Nhập ký tự cần kiểm tra:");-->
+<!--    alert(kiemtrakituso(kiemtra));-->
+<!--</script>-->
+<!--<script>-->
+<!--    let a = parseInt(prompt("Nhập số nguyên thứ nhất: "));-->
+<!--    let b = parseInt(prompt("Nhập số nguyên thứ hai: "));-->
+<!--    let c = parseInt(prompt("Nhập số nguyên thứ ba: "));-->
+<!--    function min(a, b, c) {-->
+<!--        if (a<b &&a<c){-->
+<!--            return a;-->
+<!--        }else  if (b<c){-->
+<!--            return b;-->
+<!--        }else-->
+<!--            return c;-->
+<!--    }-->
+<!--    alert("Số nguyên nhỏ nhất: "+min(a,b,c));-->
+<!--</script>-->
+<!--<script>-->
+<!--    let a = parseInt(prompt("Nhập 1 số bất kì: "));-->
+<!--    function kiemtraso(a) {-->
+<!--        if (a>0){-->
+<!--            return true;-->
+<!--        }else return false;-->
+<!--    }-->
+<!--    alert(kiemtraso(a));-->
+<!--</script>-->
+<!--<script>-->
+<!--    let a = parseInt(prompt("Nhập số nguyên thứ nhất: "));-->
+<!--    let b = parseInt(prompt("Nhập số nguyên thứ hai: "));-->
+<!--    function f() {-->
+<!--        let arr =[];-->
+<!--        arr[0] = a;-->
+<!--        arr[1] = b;-->
+<!--        return arr.reverse();-->
+<!--    }-->
+<!--    alert("Số đảo ngược là: "+f(a,b));-->
+<!--</script>-->
+<!--<script>-->
+<!--    let a = parseInt(prompt("Nhập số phần tử: "));-->
+<!--    function f(a) {-->
+<!--       let arr=[];-->
+<!--        for (let i=0; i<a; i++){-->
+<!--            arr[i] = parseInt(prompt("Phần thử thứ "+i));-->
+<!--        }-->
+<!--        return arr.reverse();-->
+<!--    }-->
+<!--    alert(f(a));-->
+<!--</script>-->
+<script>
+    let arr = ["Tran Van Vu"].join();
+    let search = prompt("Nhập ký tự cần tìm: ");
+    function searcharr(arr, search) {
+        let a = 0;
+        for (let i=0; i<arr.length; i++){
+            if (arr[i]===search){
+                a++;
+            }else if (i===(arr.length - 1 )&& a<=0){
+                a = -1;
+            }
+        }
+        return a;
+    }
+    alert(searcharr(arr,search));
+</script>
+</body>
+</html>
