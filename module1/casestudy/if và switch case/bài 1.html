@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>-->
+<!--    let tienluong = parseInt(prompt("nhập tiền lương của bạn:"));-->
+<!--    let tienluongsauhte;-->
+<!--    if (tienluong > 15000000) {-->
+<!--        tienluongsauhte = tienluong - (tienluong*0.2);-->
+<!--        document.write("Tiền lương bạn được nhận là: " + tienluongsauhte);-->
+<!--    } else if (tienluong > 7000000 && tienluong < 15000000) {-->
+<!--        tienluongsauhte = tienluong - (tienluong*0.1);-->
+<!--        document.write("Tiền lương bạn được nhận là: " + tienluongsauhte);-->
+<!--    }else {-->
+<!--        tienluongsauhte = tienluong - (tienluong*0.05);-->
+<!--        document.write("Tiền lương bạn được nhận là: " + tienluongsauhte);-->
+<!--    }-->
+<!--</script>-->
+<script>
+    let kiemtra = prompt("Nhập ký tự bạn cần kiểm tra");
+    kiemtra= kiemtra.toLowerCase();
+    switch (kiemtra) {
+        case "o":
+        case "u":
+        case "i":
+        case "a":
+        case "e":
+        alert("Ký tự bạn vừa nhập là số nguyên âm");
+        break;
+        default:
+            alert("Ký tự bạn vừa nhập là phụ âm");
+    }
+</script>
+</body>
+</html>

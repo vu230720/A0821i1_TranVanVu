@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>-->
+<!--    // bài1-->
+<!--    let a = parseInt(prompt("Nhap chieu dai a: "));-->
+<!--    let b = parseInt(prompt("Nhap chieu rong b: "));-->
+<!--    let result = '';-->
+<!--    for (let i = 1; i <= a; i++) {-->
+<!--        for (let j = 1; j <= b; j++)-->
+<!--            if (i == 1 || j == 1 || i == a || j == b){-->
+<!--                result += "* "-->
+<!--            }-->
+<!--            else{-->
+<!--                result += "&nbsp;&nbsp;&nbsp;";-->
+<!--            }-->
+<!--        result += "<br>";-->
+<!--    }-->
+<!--    document.write(result);-->
+<!--</script>-->
+<!--<script>-->
+<!--bài 2-->
+<!--    let h = parseInt(prompt("Nhập chiều cao h: "));-->
+<!--    for (let i = 0; i < h; i++) {-->
+<!--        document.write("<br>");-->
+<!--        for (let j = 0; j <= i; j++) {-->
+<!--            if (i == 0 || i == (h-1)) {-->
+<!--                document.write("*");-->
+<!--            } else if (j == 0 || j == i) {-->
+<!--                    document.write("*");-->
+<!--                } else {-->
+<!--                    document.write("&ensp;");-->
+<!--                }-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+<!--<script>-->
+<!--bài 3-->
+<!--    let h = parseInt(prompt("nhap h"));-->
+<!--    let result = "";-->
+<!--    for (let i =1; i <= h; i++){-->
+<!--        for (let k = h; k > i; k&#45;&#45;){-->
+<!--           result += "&ensp;";-->
+<!--        }-->
+<!--        let x = i * 2 - 1;-->
+<!--        for (let j = 1; j <= x; j++){-->
+<!--            result += "*";-->
+<!--        }-->
+<!--        result += "<br>";-->
+<!--    }-->
+<!--    document.write(result);-->
+<!--</script>-->
+<script>
+    let h = parseInt(prompt("nhap h"));
+    let result = "";
+    for (let i = 1; i <= h; i++) {
+        for (let k = h; k > i; k--) {
+            result += "&ensp;";
+        }
+        let x = i * 2 - 1;
+        for (let j = 1; j <= x; j++) {
+            result += "*";
+        }
+        result += "<br>";
+    }
+    document.write(result);
+</script>
+</body>
+</html>
